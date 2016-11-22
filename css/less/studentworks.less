@@ -1,0 +1,97 @@
+.teachconditionWrapper {
+  .box-body {
+    padding: 0 25px 55px 20px !important;
+    .studentAndTeachCondition {
+      padding: 20px 0;
+      li {
+        width: 244px;
+        height: 235px;
+        text-align: center;
+        img {
+          width: 244px;
+        }
+        .worksItemBottom {
+          width: 90%;
+          margin: 8px;
+          height: 44px;
+          overflow: hidden;
+          position: absolute;
+          bottom: 0;
+          p {
+            color: @md-grey-666;
+          }
+          textarea {
+            //padding-left: 10px;
+            //width: 110%;
+            width: 100%;
+            border: none;
+            resize: none;
+            outline: none;
+            background-color: #F3F6FF;
+            display: none;
+          }
+
+        }
+        .worksFooter {
+          padding-top: 2px;
+          .videoFooterLeft {
+            width: 47%;
+            float: left;
+          }
+          .videoFooterRight {
+            width: 47%;
+            float: right;
+            text-align: right;
+          }
+          span {
+            float: left;
+            color: @md-grey-900;
+            font-size: 12px;
+            margin-left: 4px;
+            line-height: 15px;
+          }
+        }
+      }
+
+    }
+
+  }
+  .box-header{
+    .uploadProConForWorC{
+      opacity: 0;
+    }
+    .headerAddBtn{
+      float: left;
+      margin-top: 15px;
+      margin-left:53px;
+      .size(82px,34px);
+      .box-sizing();
+
+    }
+    .box-headerItem {
+      float: left;
+      min-width: 100px;
+      width: 150px;
+      height: 100%;
+      &.inputFormItem {
+        padding-left: 53px;
+        padding-top: 2px;
+        opacity: 0;
+      }
+      &.uploadProgressCon {
+        width: 380px !important;
+      }
+    }
+    .basicFormInfoError{
+      position: absolute;
+      width: 40%;
+      text-align: center;
+      height: 100%;
+      top: 0;
+      left: 30%;
+    }
+  }
+  .worksAndConditionPageCon{
+    margin-left: 12px;
+  }
+}

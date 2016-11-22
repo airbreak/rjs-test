@@ -1,0 +1,129 @@
+.teachersWrapper {
+  background-color:transparent;
+  box-shadow: none;
+  .tItems {
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: @white-color;
+    margin: 25px auto;
+    margin-bottom: 0px;
+    position: relative;
+
+    &.edit{
+      background-color:@white-color;
+    }
+    &.normal{
+      background-color:@white-color;
+    }
+  }
+
+}
+
+.teacherHeader {
+  height: 57px;
+  line-height: 54px;
+  background-color: white;
+  position: relative;
+  .teacherTitle {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  .headerAddBtn {
+    margin-left: 80px;
+    height: 34px;
+    width: 82px;
+  }
+  .editTeacher{
+    float: right;
+    margin-right: 20px;
+    color:@brand-info;
+    cursor: pointer;
+  &:hover {
+    color: #F0BE67;
+    }
+  }
+  #loadGroupDataError{
+    position: absolute;
+    width: 40%;
+    text-align: center;
+    height: 100%;
+    top: 0;
+    left:30%;
+  }
+}
+
+.groupItemHeader{
+  border-bottom: 1px solid @md-grey-E2;
+}
+.memberItemUl {
+  min-height: 60px;
+  li {
+    height: 200px;
+    width: 166px;
+    position: relative;
+    margin: 30px 30px 0 0;
+    background-color: #fff;
+    border:1px solid #bdbdbd;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 15px 8px;
+    &:hover {
+      .box-shadow(0 0 6px @md-grey-84);
+    }
+    .memberItemPic {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height:100%;
+        border-radius: 30px;
+        &.hover {
+          .box-shadow(0 0 6px @md-grey-84);
+        }
+      }
+    }
+    .memberItemName {
+      margin: 20px 0;
+      p {
+        margin-top: 10px;
+        .txt-ellipsis-p(1);
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+      }
+    }
+
+    .memberItemJop{
+      margin: 12px auto 12px auto;
+      p{
+        .txt-ellipsis-p(1);
+        color: #212121;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+    .memberItemDesc{
+      .size(100%,60px);
+      color: #999;
+      border-top: 1px solid #bdbdbd;
+      box-sizing: border-box;
+      p{
+        margin: 12px 0;
+        font-size: 12px;
+        .txt-ellipsis-p(2);
+        line-height: 21px;
+      }
+    }
+  }
+}
+
+.sortableplaceholder {
+     border: 1px dotted #428BCA !important;
+ }
+
+
+

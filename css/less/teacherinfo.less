@@ -1,0 +1,295 @@
+.teacherinfo-body{
+  padding:30px !important;
+}
+.teacher-info-form {
+  width: 100%;
+  .form-group {
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    .col-1, .col-2 {
+      margin-left: 0;
+    }
+
+    .introduce-col {
+      width: auto;
+      #introduce {
+        width: 657px;
+      }
+    }
+
+    &.search-group {
+      overflow: visible !important;
+      .search-btn-col {
+        .loadingCircle {
+          margin-left: 10px;
+          margin-top: 3px;
+        }
+      }
+      .searcher-input-col {
+        position: relative;
+        ul {
+          position: absolute;
+          top: 34px;
+          left: 1px;
+          .size(350px, 34px);
+          z-index: 10000;
+          max-height: 158px;
+          min-height: 50px;
+          overflow: auto;
+          box-shadow: 0 0 5px #999;
+          background-color: #fff;
+          display: none;
+          li {
+            list-style: none;
+            height: 50px;
+            border-bottom: 1px solid @md-grey-E3;
+            cursor: pointer;
+            &:hover {
+              background-color: @md-grey-E3;
+            }
+            img {
+              margin-left: 10px;
+              margin-top: 5px;
+              .size(40px, 40px);
+              .border-radius(50%);
+              float: left;
+            }
+            span {
+              font-size: 14px;
+              color: @md-grey-78;
+              float: left;
+              margin-left: 10px;
+              line-height: 50px;
+            }
+
+          }
+        }
+      }
+    }
+
+    #organization_id {
+      display: none;
+    }
+
+    .teacher-info-col {
+      width: 100%;
+      margin: 0;
+    }
+
+    .label-txt {
+      text-align: center;
+      font-weight: normal;
+      color: @md-grey-300;
+      font-size: 14px;
+      padding: 0 10px;
+      width: auto;
+    }
+    .label-img {
+      .size(75px);
+      .border-radius(50%);
+      overflow-y: hidden;
+      img {
+        .size(75px);
+      }
+    }
+    .label-box {
+      margin-top: 15px;
+      margin-left: 10px;
+      .title {
+        font-size: 14px;
+        color: @md-grey-666;
+        line-height: 28px;
+        margin-bottom: 5px;
+      }
+      .txt {
+        font-size: 12px;
+        color: @md-grey-900;
+        line-height: 20px;
+      }
+    }
+    .box-tag {
+      margin: 10px 0;
+      line-height: 35px;
+      text-align: left;
+      a {
+        display: inline-block;
+      }
+
+      .myAdvantageItem {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+        .myAdvantageItemTxt {
+          display: inline-block;
+          //min-width: 55px;
+          padding: .3em .8em;
+          margin-right: 15px;
+          position: relative;
+          &::after {
+            content: '|';
+            position: absolute;
+            color: #fff;
+            top: 3px;
+            right: 3px;
+          }
+        }
+        .box-add {
+          position: absolute;
+          right: 1px;
+          padding: 0.3em;
+          cursor: pointer;
+          &:hover {
+            color: @brand-info;
+            transform: scale(1.3);
+          }
+          .icon-add {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .normal-input {
+      width: 326px;
+    }
+    textarea {
+      width: 694px;
+    }
+
+    #uploadImg {
+      height: 32px;
+      padding: 0 15px;
+      margin-bottom: 5px;
+    }
+    .basicResultInfoError {
+      #basicInfoResultLabel {
+        display: none;
+        margin-left: 20px;
+        line-height: 20px;
+      }
+    }
+
+    .requireField {
+      width: 30px;
+      margin: 0 !important;
+      label {
+        font-size: 16px;
+        //width: 200px;
+        font-weight: normal;
+        line-height: 37px;
+        color: @brand-info;
+      }
+    }
+
+
+    &.job-title-group {
+      margin-bottom: 0;
+    }
+
+    &.works-box-group{
+      padding-left: 20px;
+    }
+
+    .job-ul {
+      margin-left: 12px;
+      li {
+        display: inline-block;
+        .size(252px, 160px);
+        cursor: pointer;
+        vertical-align: top;
+        box-shadow: none;
+        @top: 16px;
+        padding: @top + 2 10px;
+        .left {
+          position: absolute;
+          .size(60px, 60px);
+          top: @top;
+          left: 0px;
+          padding: 0 10px;
+          img {
+            .border-radius(30px);
+            .size(100%, 100%);
+          }
+        }
+        .right {
+          margin-left: 70px;
+          p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #666;
+            line-height: 25px;
+            .txt-ellipsis-p(1);
+            &:nth-of-type(2) {
+              .txt-ellipsis-p(2);
+            }
+          }
+        }
+        &:hover {
+          background-color: #ebebeb;
+          box-shadow: 0 0 6px #cccccc;
+        }
+      }
+    }
+
+  }
+}
+
+
+#submitBasicInfoBtn{
+  height: 40px;
+  width: 115px;
+  margin-left: 23px;
+}
+
+#employment-modal{
+  .modal-container{
+    .size(752px,462px);
+    .form-group {
+      color: #666666;
+      margin-bottom: 12px;
+      &.input-form-group {
+        display: none;
+      }
+      .col-label{
+        width: 60px;
+        font-weight: normal;
+        text-align: left;
+        padding: 0;
+        overflow: visible;
+      }
+      #upload-employment-img {
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      #employ-img-modal {
+        .size(60px, 60px);
+        .border-radius(30px)
+      }
+      .col-2 {
+        &.requireField {
+          width: 20px;
+          text-align: right;
+        }
+      }
+    }
+    .modal-footer{
+      .btn{
+        margin:0 10px 0 37px;
+      }
+      #hide-employment-modal{
+        cursor: pointer;
+        color:#666666;
+        margin-right: 10px;
+      }
+      label{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1400px) {
+  .teacher-info-form .form-group.works-detail-group .show-more-works-btn {
+      margin-left: 20px;
+    }
+}
